@@ -1,20 +1,13 @@
 #script for inference and perspective transformation 
 
-import io
-import os
-import scipy.misc
 import numpy as np
-import time
-import glob
 from six import BytesIO
-
+import tensorflow as tf
 from scipy.spatial import distance as dist
 import cv2
-
-
 from PIL import Image, ImageDraw, ImageFont
 
-import tensorflow as tf
+
 from utils import ops as utils_ops
 from utils import label_map_util
 
